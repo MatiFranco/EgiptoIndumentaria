@@ -290,6 +290,34 @@ footer h4{
     font-size: 2rem;
 }
 
+/* animaciones y gradientes */
+
+header, footer{
+    background-image: linear-gradient(to bottom, black, rgb(46, 42, 42));
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+a:active{
+    background-color: rgba(255, 255, 0, 0.507);
+    font-size: 1.3rem;
+}
+
+header h1:hover{
+    transform: scale(1.1);
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+.verP:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px black;
+}
+
 
 
 /* media queries */
