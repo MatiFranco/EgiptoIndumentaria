@@ -1,69 +1,41 @@
-/* reset */
+/* restart */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
+body {
+  background-color: #FFF9C4; }
 
+.tituloPaginas {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  font-size: 2rem; }
 
-/* css menu */
-
-
-header{
-    display: flex;
-    justify-content: space-around;
-    grid-area: header;
-   
-}
-
-header nav ul{
-    display: flex;
-    list-style: none;
-    gap: 0.6rem;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-
-body{
-    background-color: #FFF9C4;
-}
-
-.estiloTitulo{
+/* menu */
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  background-color: #2e2a2a;
+  align-items: center;
+  gap: 1.9rem;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  grid-area: header; }
+  header div h1 {
     color: #F4D03F;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
-    font-style: oblique;
-   
-}
-
-
-header{
-    height: 5rem;
-    background-color: rgb(46, 42, 42);
-    align-items: center;
-    gap: 1.9rem;
-    justify-content: space-around;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-.fotoPrincipal{
+    font-style: oblique; }
+  header nav ul {
     display: flex;
-    justify-content: center;
-    grid-area: fotoHome;
-}
-
-.fotoPrincipal .fotoHome{
-    width: 80%;
-}
-
-.estiloMenu{
+    list-style: none;
+    gap: 0.6rem; }
+  header .estiloMenu {
     list-style: none;
     background-color: #F4D03F;
     font-weight: bold;
@@ -71,477 +43,313 @@ header{
     padding: 0.6rem;
     text-align: center;
     border: 0.3rem outset rgba(255, 255, 0, 0.507);
-    border-radius: 1.5rem;
-}
+    border-radius: 1.5rem; }
+  header nav ul li a {
+    text-decoration: none;
+    color: black; }
 
-.conoce{
-    display: flex;
-    height: 12.5rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    grid-area: conoce;
-}
+/* css index */
+.fotoPrincipal {
+  display: flex;
+  justify-content: center;
+  grid-area: fotoHome; }
+  .fotoPrincipal .fotoHome {
+    width: 80%; }
 
-.botonProductos{
-    margin: 6.2rem;
-    display: flex;
-    justify-content: center;
+.conoce {
+  display: flex;
+  height: 12.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  grid-area: conoce; }
 
-    grid-area: verP;
-
-}
-
-.verP{
+.botonProductos {
+  margin: 6.2rem;
+  display: flex;
+  justify-content: center;
+  grid-area: verP; }
+  .botonProductos .verP {
     background-color: #F4D03F;
     margin: 0.3rem;
     padding: 0.6rem;
     text-align: center;
     border: 0.3rem outset rgba(255, 255, 0, 0.507);
-    border-radius: 3rem;
-}
-
-.botonProductos .verP a{
+    border-radius: 3rem; }
+  .botonProductos .verP a {
     text-decoration: none;
     color: black;
-    font-size: 2rem;
-}
+    font-size: 2rem; }
 
-footer{
-    height: 6.2rem;
-    display: flex;
-    align-items: flex-end;
-    background-color: rgb(46, 42, 42);
-    grid-area: footer;
-    
-    
-}
-
-footer h3{
+footer {
+  height: 6.2rem;
+  display: flex;
+  align-items: flex-end;
+  background-color: #2e2a2a;
+  grid-area: footer; }
+  footer h3 {
     font-size: small;
-    color: #F4D03F;
-}
+    color: #F4D03F; }
 
-footer h4{
-    font-size: small;
-    color: #F4D03F;
-}
+.imagen1 {
+  display: flex;
+  justify-content: center;
+  grid-area: img1; }
+  .imagen1 img {
+    width: 100%; }
 
- .imagen1{
+.imagen2 {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: img2; }
+  .imagen2 img {
+    width: 70%; }
+
+.imagen3 {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: img3; }
+  .imagen3 img {
+    width: 70%; }
+
+/* grid index */
+.contenedorPrincipal {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "fotoHome fotoHome fotoHome"
+ "conoce conoce conoce"
+ "img1 img2 img3"
+ "verP verP verP"; }
+
+/* css productos */
+.menuProductos {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%; }
+  .menuProductos nav ul {
     display: flex;
-    justify-content: center;
-    grid-area: img1;
- }
-
-.imagen1 img{
-    width: 100%;
-}
-
-.imagen2{
-    display: flex;
-    justify-content: flex-end;
-    grid-area: img2;
-}
-
-.imagen2 img{
-    width: 70%;
-}
-
-.imagen3{
-    display: flex;
-    justify-content: flex-end;
-    grid-area: img3;
-}
-
-.imagen3 img{
-    width: 70%;
-}
-
-.contenedorPrincipal{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:"fotoHome fotoHome fotoHome"
-                        "conoce conoce conoce"
-                        "img1 img2 img3"
-                        "verP verP verP";
-
-}
-
-/* css pagina productos */
-
-.menuProductos{
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-}
-
-.menuProductos nav ul{
-    display: flex;
-    justify-content: space-around;
-}
-
-.menuProductos nav ul li{
+    justify-content: space-around; }
+  .menuProductos nav ul li {
     list-style: none;
     background-color: #F4D03F;
     margin: 1.2rem;
     padding: 1.2rem 3.1rem 1.2rem 3.1rem;
     border: 0.3rem outset rgba(255, 255, 0, 0.507);
     border-radius: 1.5rem;
-    text-align: center;
-}
+    text-align: center; }
 
-/* fotos de pagina productos*/
+.fotosProductos {
+  height: 31rem;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 2rem; }
+  .fotosProductos .img1 {
+    width: 20%; }
+  .fotosProductos .img2 {
+    width: 20%; }
+  .fotosProductos .img3 {
+    width: 19.3%; }
+  .fotosProductos .img4 {
+    width: 19.3%; }
 
-.fotosProductos{
-    height: 31rem;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    margin-bottom: 2rem;
-}
+/* css envios */
+.estiloEnvios {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "envios foto"; }
 
-.img1{
-    width: 20%;
-}
+.contenedorFoto {
+  display: flex;
+  align-items: center; }
+  .contenedorFoto .fotoEnvios {
+    height: 50rem; }
 
-.img2{
-  width: 20%;
-  
-}
+/* css contacto */
+.estiloFormulario {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border: 2px black; }
 
-.img3{
-    width: 19.3%;
-    
-}
+.estiloFormulario2 {
+  border: none;
+  margin-top: 10px;
+  font-size: large; }
 
-.img4{
-    width: 19.3%;
-}
+.paginaFormulario {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px; }
+  .paginaFormulario div .tituloFormulario {
+    font-size: 2rem; }
 
+/* css nosotros */
+.paginaNosotros {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+  .paginaNosotros .tituloNosotros {
+    font-size: 2rem; }
 
-.tituloPaginas{
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-    font-size: 2rem;
-}
-
-/* css pagina envios */
-
-.estiloEnvios{
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:"envios foto";
-}
-
-.fotoEnvios{
-    height: 50rem;
-}
-
-.contenedorFoto{
-    display: flex;
-    align-items: center;
-}
-
-/* css pagina contacto */
-
-.estiloFormulario{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    border: 2px black;
-    
-}
-
-.estiloFormulario2{
-    border: none;
-    margin-top: 10px;
-    font-size: large;
-
-}
-
-.paginaFormulario{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 30px;
-   
-    
-}
-
-.tituloFormulario{
-    font-size: 2rem;
-}
-
-/* css pagina nosotros */
-
-.paginaNosotros{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.tituloNosotros{
-    font-size: 2rem;
-}
+/* footer pages */
+footer h4 {
+  font-size: small;
+  color: #F4D03F; }
 
 /* animaciones y gradientes */
+header, footer {
+  background-image: linear-gradient(to bottom, black, #2e2a2a); }
 
-header, footer{
-    background-image: linear-gradient(to bottom, black, rgb(46, 42, 42));
-}
+li:hover {
+  transform: scale(1.1); }
 
-li:hover{
-    transform: scale(1.1);
-}
+a:active {
+  background-color: rgba(255, 255, 0, 0.507);
+  font-size: 1.3rem; }
 
-a:active{
-    background-color: rgba(255, 255, 0, 0.507);
-    font-size: 1.3rem;
-}
+header h1:hover {
+  transform: scale(1.1); }
 
-header h1:hover{
-    transform: scale(1.1);
-}
+img:hover {
+  transform: scale(1.2); }
 
-img:hover{
-    transform: scale(1.2);
-}
-
-.verP:hover{
-    transform: scale(1.1);
-    box-shadow: 3px 3px black;
-}
-
-
+.verP:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px black; }
 
 /* media queries */
+@media screen and (max-width: 1023px) {
+  /* index */
+  .contenedorPrincipal {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:"fotoHome"
+                        "conoce"
+                        "img1"
+                        "img2"
+                        "img3"
+                        "verP"; }
+  header {
+    justify-content: center;
+    gap: 1rem; }
+    header nav ul {
+      justify-content: center; }
+    header div .estiloTitulo {
+      text-align: center;
+      font-size: 1.8rem; }
+    header .estiloMenu {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      align-items: center; }
+    header .estiloMenu a {
+      font-size: 1rem; }
+    header nav ul li a {
+      font-size: 1.2rem; }
+  .conoce {
+    height: 8rem; }
+    .conoce h2 {
+      font-size: 1.8rem; }
+  .imagen1 {
+    width: 70%;
+    margin-left: 6.11rem;
+    margin-bottom: 1rem; }
+  .imagen2 {
+    justify-content: center;
+    margin-bottom: 1rem; }
+  .imagen3 {
+    justify-content: center; }
+  .botonProductos {
+    margin: 3rem; }
+  /* productos */
+  .menuProductos nav ul li {
+    margin: 0.7rem;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    font-weight: bold; }
+    .menuProductos nav ul li nav ul {
+      gap: 3.5rem; }
+    .menuProductos nav ul li div h2 {
+      font-size: 2rem; }
+  .fotosProductos {
+    justify-content: space-around;
+    gap: 0.5rem; }
+    .fotosProductos .img1 {
+      width: 30%; }
+    .fotosProductos .img2 {
+      width: 30%; }
+    .fotosProductos .img3 {
+      width: 30%; }
+    .fotosProductos .img4 {
+      width: 30%; }
+  /* envios */
+  .estiloEnvios {
+    width: 80%;
+    gap: 2rem; }
+  .fotoEnvios {
+    height: 30rem; }
+  /* contacto */
+  .tituloFormulario {
+    grid-area: contacto;
+    text-align: center; }
+  .estiloFormulario h3 {
+    grid-area: conocerte;
+    text-align: center; }
+    .estiloFormulario h3 .estiloFormulario2 {
+      grid-area: formulario;
+      text-align: center; } }
 
-@media screen and (max-width:1023px){
-   
-    .contenedorPrincipal{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas:"fotoHome"
-                            "conoce"
-                            "img1"
-                            "img2"
-                            "img3"
-                            "verP";
-
-        
-                            
-    }
-
-        
-    
-        header{
-            justify-content: center;
-            gap: 1rem;
-        }
-    
-        header h1{
-            text-align: center;
-        }
-    
-        .estiloTitulo{
-            font-size: 1.8rem;
-        }
-    
-        header nav ul li a{
-            font-size: 1.2rem;
-            
-        }
-    
-        .estiloMenu{
-            display: flex;
-            margin: 0px;
-            padding: 0px;
-            align-items: center;
-        }
-    
-        .estiloMenu a{
-            font-size: 1rem;
-        }
-    
-        header nav ul{
-            justify-content: center;
-        }
-
-        .conoce{
-            height: 8rem;
-        }
-
-        .conoce h2{
-            font-size: 1.8rem;
-        }
-
-        .imagen1{
-            width: 70%;
-            margin-left: 6.11rem;
-            margin-bottom: 1rem;
-        }
-
-        .imagen2{
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-
-        .imagen3{
-            justify-content: center;
-        }
-
-        .botonProductos{
-            margin: 3rem;
-        }
-
-        .tituloPaginas h2{
-            font-size: 2rem;
-        }
-
-        .menuProductos nav ul li{
-            margin: 0.7rem;
-            padding: 0.7rem;
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-
-        .menuProductos nav ul{
-           gap: 3.5rem;
-        }
-
-        .fotosProductos{
-            justify-content: space-around;
-            gap: 0.5rem;
-            
-        }
-
-        .img1{
-            width: 30%;
-        }
-
-        .img2{
-            width: 30%;
-        }
-
-        .img3{
-            width: 30%;
-        }
-
-        .img4{
-            width: 30%;
-        }
-
-        .estiloEnvios{
-            width: 80%;
-            gap: 2rem;
-        }
-
-        .fotoEnvios{
-            height: 30rem;
-        }
-
-        .tituloFormulario{
-            grid-area: contacto;
-            text-align: center;
-        }
-
-        .estiloFormulario h3{
-            grid-area: conocerte;
-            text-align: center;
-
-        }
-
-        .estiloFormulario2{
-            grid-area: formulario;
-           text-align: center;
-        }
-        
-    
-    }
-    
-    @media screen and (max-width:599px){
-        
-
-    
-        header{
-            display: block;
-        }
-    
-        .estiloMenu a{
-            font-size: 0.8rem;
-            align-items: center;
-        }
-    
-        .estiloTitulo{
-            text-align: center;
-            font-size: medium;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-    
-        .estiloMenu{
-            display: flex;
-            align-items: center;
-            margin: 0px;
-            padding: 0px;
-        }
-    
-        header nav ul{
-            justify-content: center;
-        }
-
-        .conoce h2{
-            font-size: 1rem;
-        }
-
-        .imagen1{
-            margin-left: 3.3rem;
-        }
-
-        .botonProductos{
-            margin: 1rem;
-        }
-
-        .botonProductos .verP a{
-            font-size: 1rem;
-        }
-
-        .menuProductos .tituloPaginas h2{
-            font-size: 1rem;
-        }
-
-        .fotosProductos{
-            display: none;
-        
-        }
-        
-        .menuProductos nav ul{
-            display: flex;
-            flex-direction: column;
-            margin: 1.5rem;
-        
-        }
-
-        .estiloEnvios{
-            width: 80%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto;
-            grid-template-areas:"envios" 
-                                "foto";
-        }
-
-        .fotoEnvios{
-            width: 100%;
-        }
-        
-       
-    }
+@media screen and (max-width: 599px) {
+  /* index */
+  header {
+    display: block; }
+    header nav ul {
+      justify-content: center; }
+    header .estiloTitulo {
+      text-align: center;
+      font-size: medium;
+      margin-bottom: 1rem;
+      font-size: 1.3rem; }
+    header nav ul .estiloMenu {
+      display: flex;
+      align-items: center;
+      margin: 0px;
+      padding: 0px; }
+    header nav ul .estiloMenu a {
+      font-size: 0.8rem;
+      align-items: center; }
+  .conoce h2 {
+    font-size: 1rem; }
+  .imagen1 {
+    margin-left: 3.3rem; }
+  .botonProductos {
+    margin: 1rem; }
+    .botonProductos .verP a {
+      font-size: 1rem; }
+  /* productos */
+  .menuProductos .tituloPaginas h2 {
+    font-size: 1rem; }
+  .fotosProductos {
+    display: none; }
+  .menuProductos nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem; }
+  /* envios */
+  .estiloEnvios {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "envios" "foto"; }
+  .fotoEnvios {
+    width: 100%; } }
