@@ -1,3 +1,98 @@
+/* animaciones y gradientes */
+header, footer {
+  background-image: linear-gradient(to bottom, black, #2e2a2a); }
+
+li:hover {
+  transform: scale(1.1); }
+
+a:active {
+  background-color: rgba(255, 255, 0, 0.507);
+  font-size: 1.3rem; }
+
+header h1:hover {
+  transform: scale(1.1); }
+
+img:hover {
+  transform: scale(1.2); }
+
+.verP:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px black; }
+
+/* css productos */
+.menuProductos {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%; }
+  .menuProductos nav ul {
+    display: flex;
+    justify-content: space-around; }
+  .menuProductos nav ul li {
+    list-style: none;
+    background-color: #F4D03F;
+    margin: 1.2rem;
+    padding: 1.2rem 3.1rem 1.2rem 3.1rem;
+    border: 0.3rem outset rgba(255, 255, 0, 0.507);
+    border-radius: 1.5rem;
+    text-align: center; }
+
+.fotosProductos {
+  height: 31rem;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 2rem; }
+  .fotosProductos .img1 {
+    width: 20%; }
+  .fotosProductos .img2 {
+    width: 20%; }
+  .fotosProductos .img3 {
+    width: 19.3%; }
+  .fotosProductos .img4 {
+    width: 19.3%; }
+
+/* css envios */
+.estiloEnvios {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "envios foto"; }
+
+.contenedorFoto {
+  display: flex;
+  align-items: center; }
+  .contenedorFoto .fotoEnvios {
+    height: 50rem; }
+
+/* css nosotros */
+.paginaNosotros {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+  .paginaNosotros .tituloNosotros {
+    font-size: 2rem; }
+
+/* css contacto */
+.estiloFormulario {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border: 2px black; }
+
+.estiloFormulario2 {
+  border: none;
+  margin-top: 10px;
+  font-size: large; }
+
+.paginaFormulario {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px; }
+  .paginaFormulario div .tituloFormulario {
+    font-size: 2rem; }
+
 /* restart */
 * {
   margin: 0px;
@@ -124,105 +219,10 @@ footer {
  "img1 img2 img3"
  "verP verP verP"; }
 
-/* css productos */
-.menuProductos {
-  width: 80%;
-  margin: 0 auto;
-  height: 100%; }
-  .menuProductos nav ul {
-    display: flex;
-    justify-content: space-around; }
-  .menuProductos nav ul li {
-    list-style: none;
-    background-color: #F4D03F;
-    margin: 1.2rem;
-    padding: 1.2rem 3.1rem 1.2rem 3.1rem;
-    border: 0.3rem outset rgba(255, 255, 0, 0.507);
-    border-radius: 1.5rem;
-    text-align: center; }
-
-.fotosProductos {
-  height: 31rem;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  margin-bottom: 2rem; }
-  .fotosProductos .img1 {
-    width: 20%; }
-  .fotosProductos .img2 {
-    width: 20%; }
-  .fotosProductos .img3 {
-    width: 19.3%; }
-  .fotosProductos .img4 {
-    width: 19.3%; }
-
-/* css envios */
-.estiloEnvios {
-  width: 70%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "envios foto"; }
-
-.contenedorFoto {
-  display: flex;
-  align-items: center; }
-  .contenedorFoto .fotoEnvios {
-    height: 50rem; }
-
-/* css contacto */
-.estiloFormulario {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  border: 2px black; }
-
-.estiloFormulario2 {
-  border: none;
-  margin-top: 10px;
-  font-size: large; }
-
-.paginaFormulario {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 30px; }
-  .paginaFormulario div .tituloFormulario {
-    font-size: 2rem; }
-
-/* css nosotros */
-.paginaNosotros {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem; }
-  .paginaNosotros .tituloNosotros {
-    font-size: 2rem; }
-
 /* footer pages */
 footer h4 {
   font-size: small;
   color: #F4D03F; }
-
-/* animaciones y gradientes */
-header, footer {
-  background-image: linear-gradient(to bottom, black, #2e2a2a); }
-
-li:hover {
-  transform: scale(1.1); }
-
-a:active {
-  background-color: rgba(255, 255, 0, 0.507);
-  font-size: 1.3rem; }
-
-header h1:hover {
-  transform: scale(1.1); }
-
-img:hover {
-  transform: scale(1.2); }
-
-.verP:hover {
-  transform: scale(1.1);
-  box-shadow: 3px 3px black; }
 
 /* media queries */
 @media screen and (max-width: 1023px) {
@@ -350,6 +350,7 @@ img:hover {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "envios" "foto"; }
+    grid-template-areas: "envios" 
+ "foto"; }
   .fotoEnvios {
     width: 100%; } }

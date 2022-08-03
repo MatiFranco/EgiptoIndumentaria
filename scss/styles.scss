@@ -1,3 +1,10 @@
+@import "base/variables";
+@import "base/animaciones";
+@import "utilities/productos";
+@import "utilities/envios";
+@import "utilities/nosotros";
+@import "utilities/contacto";
+
 /* restart */
 
 *{
@@ -32,7 +39,7 @@ header{
     z-index: 2;
     grid-area: header;
     div h1{
-        color: #F4D03F;
+        color: $color-principal;
         font-size: 1.5rem;
         font-family: 'Roboto', sans-serif;
         font-style: oblique;
@@ -44,7 +51,7 @@ header{
     }
     .estiloMenu{
         list-style: none;
-        background-color: #F4D03F;
+        background-color: $color-principal;
         font-weight: bold;
         margin: 0.3rem;
         padding: 0.6rem;
@@ -87,7 +94,7 @@ header{
     justify-content: center;
     grid-area: verP;
     .verP{
-        background-color: #F4D03F;
+        background-color: $color-principal;
         margin: 0.3rem;
         padding: 0.6rem;
         text-align: center;
@@ -109,7 +116,7 @@ footer{
     grid-area: footer;
     h3{
         font-size: small;
-        color: #F4D03F;
+        color: $color-principal;
     }
 }
 
@@ -154,134 +161,11 @@ footer{
                         "verP verP verP";
 }
 
-/* css productos */
-
-.menuProductos{
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    nav ul{
-        display: flex;
-        justify-content: space-around;
-    }
-    nav ul li{
-        list-style: none;
-        background-color: #F4D03F;
-        margin: 1.2rem;
-        padding: 1.2rem 3.1rem 1.2rem 3.1rem;
-        border: 0.3rem outset rgba(255, 255, 0, 0.507);
-        border-radius: 1.5rem;
-        text-align: center;
-    }
-}
-
-.fotosProductos{
-    height: 31rem;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    margin-bottom: 2rem;
-    .img1{
-        width: 20%;
-    }
-    .img2{
-        width: 20%;
-    }
-    .img3{
-        width: 19.3%;
-    }
-    .img4{
-        width: 19.3%;
-    }
-}
-
-/* css envios */
-
-.estiloEnvios{
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:"envios foto";
-}
-
-.contenedorFoto{
-    display: flex;
-    align-items: center;
-    .fotoEnvios{
-        height: 50rem;
-    }
-}
-
-/* css contacto */
-
-.estiloFormulario{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    border: 2px black;
-}
-
-.estiloFormulario2{
-    border: none;
-    margin-top: 10px;
-    font-size: large;
-}
-
-.paginaFormulario{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 30px;
-   div .tituloFormulario{
-    font-size: 2rem;
-   }
-}
-
-/* css nosotros */
-
-.paginaNosotros{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    .tituloNosotros{
-        font-size: 2rem;
-    }
-}
-
 /* footer pages */
 
 footer h4{
     font-size: small;
-    color: #F4D03F;
-}
-
-/* animaciones y gradientes */
-
-header, footer{
-    background-image: linear-gradient(to bottom, black, rgb(46, 42, 42));
-}
-
-li:hover{
-    transform: scale(1.1);
-}
-
-a:active{
-    background-color: rgba(255, 255, 0, 0.507);
-    font-size: 1.3rem;
-}
-
-header h1:hover{
-    transform: scale(1.1);
-}
-
-img:hover{
-    transform: scale(1.2);
-}
-
-.verP:hover{
-    transform: scale(1.1);
-    box-shadow: 3px 3px black;
+    color: $color-principal;
 }
 
 /* media queries */
