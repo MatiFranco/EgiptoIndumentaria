@@ -1,0 +1,19 @@
+@mixin flex-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin grid-index {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:"fotoHome fotoHome fotoHome"
+                        "conoce conoce conoce"
+                        "img1 img2 img3"
+                        "verP verP verP";
+}
+

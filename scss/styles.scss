@@ -4,6 +4,8 @@
 @import "utilities/envios";
 @import "utilities/nosotros";
 @import "utilities/contacto";
+@import "base/mixin";
+@import "base/extend";
 
 /* restart */
 
@@ -27,13 +29,10 @@ body{
 /* menu */
 
 header{
-    display: flex;
-    justify-content: space-around;
+    @include flex-menu;
     height: 5rem;
     background-color: rgb(46, 42, 42);
-    align-items: center;
     gap: 1.9rem;
-    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -50,13 +49,9 @@ header{
         gap: 0.6rem;
     }
     .estiloMenu{
+        @extend %botones-index;
         list-style: none;
-        background-color: $color-principal;
         font-weight: bold;
-        margin: 0.3rem;
-        padding: 0.6rem;
-        text-align: center;
-        border: 0.3rem outset rgba(255, 255, 0, 0.507);
         border-radius: 1.5rem;
     }
     nav ul li a{
@@ -94,11 +89,7 @@ header{
     justify-content: center;
     grid-area: verP;
     .verP{
-        background-color: $color-principal;
-        margin: 0.3rem;
-        padding: 0.6rem;
-        text-align: center;
-        border: 0.3rem outset rgba(255, 255, 0, 0.507);
+        @extend %botones-index;
         border-radius: 3rem;
     } 
     .verP a{
@@ -150,15 +141,7 @@ footer{
 /* grid index */
 
 .contenedorPrincipal{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:"fotoHome fotoHome fotoHome"
-                        "conoce conoce conoce"
-                        "img1 img2 img3"
-                        "verP verP verP";
+    @include grid-index;
 }
 
 /* footer pages */

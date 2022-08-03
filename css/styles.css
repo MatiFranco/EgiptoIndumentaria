@@ -93,6 +93,13 @@ img:hover {
   .paginaFormulario div .tituloFormulario {
     font-size: 2rem; }
 
+header .estiloMenu, .botonProductos .verP {
+  background-color: #F4D03F;
+  margin: 0.3rem;
+  padding: 0.6rem;
+  text-align: center;
+  border: 0.3rem outset rgba(255, 255, 0, 0.507); }
+
 /* restart */
 * {
   margin: 0px;
@@ -112,11 +119,11 @@ body {
 header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   height: 5rem;
   background-color: #2e2a2a;
-  align-items: center;
   gap: 1.9rem;
-  justify-content: space-around;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -132,12 +139,7 @@ header {
     gap: 0.6rem; }
   header .estiloMenu {
     list-style: none;
-    background-color: #F4D03F;
     font-weight: bold;
-    margin: 0.3rem;
-    padding: 0.6rem;
-    text-align: center;
-    border: 0.3rem outset rgba(255, 255, 0, 0.507);
     border-radius: 1.5rem; }
   header nav ul li a {
     text-decoration: none;
@@ -165,11 +167,6 @@ header {
   justify-content: center;
   grid-area: verP; }
   .botonProductos .verP {
-    background-color: #F4D03F;
-    margin: 0.3rem;
-    padding: 0.6rem;
-    text-align: center;
-    border: 0.3rem outset rgba(255, 255, 0, 0.507);
     border-radius: 3rem; }
   .botonProductos .verP a {
     text-decoration: none;
@@ -214,10 +211,7 @@ footer {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-template-areas: "fotoHome fotoHome fotoHome"
- "conoce conoce conoce"
- "img1 img2 img3"
- "verP verP verP"; }
+  grid-template-areas: "fotoHome fotoHome fotoHome" "conoce conoce conoce" "img1 img2 img3" "verP verP verP"; }
 
 /* footer pages */
 footer h4 {
@@ -231,12 +225,7 @@ footer h4 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas:"fotoHome"
-                        "conoce"
-                        "img1"
-                        "img2"
-                        "img3"
-                        "verP"; }
+    grid-template-areas: "fotoHome" "conoce" "img1" "img2" "img3" "verP"; }
   header {
     justify-content: center;
     gap: 1rem; }
@@ -350,7 +339,6 @@ footer h4 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "envios" 
- "foto"; }
+    grid-template-areas: "envios"  "foto"; }
   .fotoEnvios {
     width: 100%; } }
